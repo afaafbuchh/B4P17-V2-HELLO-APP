@@ -1,7 +1,11 @@
 public class Helloapp {
     public static void main(String[] args) {
-        for (String name : args) {
-            System.out.println("Hello " + name);
+        if (args.length == 0) {
+            System.out.println("Hello, World!");
+        } else {
+            for (String name : args) {
+                System.out.println("Hello, " + name + "!");
+            }
         }
     }
 }
